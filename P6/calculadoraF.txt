@@ -1,0 +1,32 @@
+open System
+
+let suma x y  = x + y
+
+let resta x y = x - y
+
+let multi x y = x * y
+
+let div x y = x / y
+
+[<EntryPoint>]
+let main argumentos = 
+    Console.WriteLine("Bienvenido a las operaciones basicas, por favor ingrese el primer numero:");
+    let num1 = Console.ReadLine()
+    Console.WriteLine("Ingrese el segundo numero:")
+    let num2 = Console.ReadLine()
+    let v1 = Convert.ToInt32(num1)
+    let v2 = Convert.ToInt32(num2)
+    Console.WriteLine();
+    let s = suma valor1 v2 
+    Console.WriteLine("La suma es: "+ s.ToString());
+    Console.WriteLine();
+    let r = resta valor1 v2
+    Console.WriteLine("La resta es: "+r.ToString());
+    Console.WriteLine();
+    let m = multi v1 v2
+    Console.WriteLine("La multiplicación es: "+m.ToString());
+    Console.WriteLine();
+    let d = div v1 v2
+    Console.WriteLine("La división es: "+d.ToString());
+    Console.WriteLine();
+    let tecla = Console.ReadKey()
